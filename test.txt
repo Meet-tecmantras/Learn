@@ -1,0 +1,16 @@
+1. User
+•	Registration: - User can Register.
+•	Login: - User can Login.
+•	Buy Cars: - User can buy the Products.
+•	Sharing Products Review: - user can share the Products review to other people’s
+•	Logout: - User can Logout.
+
+2. Admin
+•	Admin Registration: - Admin can Register.
+•	Admin Login: Admin can login.
+•	Manage Category: - Admin can Manage Categories of Accessories .
+•	Manage Items: - Admin can Manage Particular Accessories.
+•	Manage Orders: - Admin can Manage Orders.
+•	Manage Report: - Admin can Manage Report of items.
+•	View Confirmation: - Admin can view the Confirmation of the customer for Online Payments.
+•	View Reviews: Admin can view the user review for providing better products and services.
