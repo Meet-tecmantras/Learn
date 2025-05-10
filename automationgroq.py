@@ -5,9 +5,21 @@ import fitz  # PyMuPDF
 import docx
 import re
 from github import Github
+from dotenv import load_dotenv
+import os
 
 # === Configuration ===
+load_dotenv()
 
+GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+GROQ_MODEL = os.getenv('GROQ_MODEL', 'llama-3.3-70b-versatile')  # Default model if not specified
+
+GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+GITHUB_REPO = os.getenv('GITHUB_REPO')
+JIRA_BASE_URL = os.getenv('JIRA_BASE_URL')
+JIRA_EMAIL = os.getenv('JIRA_EMAIL')
+JIRA_API_TOKEN = os.getenv('JIRA_API_TOKEN')
+JIRA_PROJECT_KEY = os.getenv('JIRA_PROJECT_KEY')
 
 # === File Handling ===
 def extract_text_from_file(uploaded_file):

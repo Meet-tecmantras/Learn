@@ -4,6 +4,19 @@ import docx
 import requests
 import json
 from github import Github
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+GITHUB_REPO = os.getenv('GITHUB_REPO')
+JIRA_BASE_URL = os.getenv('JIRA_BASE_URL')
+JIRA_EMAIL = os.getenv('JIRA_EMAIL')
+JIRA_API_TOKEN = os.getenv('JIRA_API_TOKEN')
+JIRA_PROJECT_KEY = os.getenv('JIRA_PROJECT_KEY')
+LLAMA_API_URL = os.getenv('LLAMA_API_URL')
 
 
 # === File Handling ===
